@@ -1,0 +1,25 @@
+<div class="controls">
+  <div class="brand">
+    <a href="/" class="logo">snipbin</a>
+  </div>
+  <div class="buttons-wrapper">
+    <a href="/new" class="btn">
+      <i class="far fa-file-alt"></i>
+    </a>
+    <% if (locals.canSave) { %>
+      <button class="btn" type="submit">
+        <i class="far fa-save"></i>
+      </button>
+    <% } %>
+    <% if (locals.id != null) { %>
+      <a href="/<%= locals.id %>/duplicate" class="btn">
+        <i class="fas fa-file-import"></i>
+      </a>
+    <% } %>
+    <% if (locals.id !== null) { %>
+      <a href="https://twitter.com/share?url=<%= locals.host %>/<%= locals.id %>/" target="_blank" class="btn">
+        <i class="fab fa-twitter"></i>
+      </a>
+    <% } %>
+  </div>
+</div>
