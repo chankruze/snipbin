@@ -13,6 +13,12 @@ const express = require("express"),
 connectMongoDB();
 // express app
 const app = express();
+app.use((req, res, next) => {
+  res.locals.url = req.originalUrl;
+  res.locals.host = req.get("host");
+  res.locals.protocol = req.protocol;
+  next();
+});
 // set view engine
 app.set("view engine", "ejs");
 // serve static files from public folder
@@ -58,7 +64,6 @@ app.get("/:id", async (req, res) => {
     res.render("code-display", {
       code: snippet.value,
       id,
-      host: `http://localhost:${PORT}`,
     });
   } catch (e) {
     res.redirect("/");
