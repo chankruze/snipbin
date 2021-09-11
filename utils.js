@@ -1,4 +1,4 @@
-const isDevEnv = () => process.env.NODE_ENV !== "production";
+const isDevEnv = () => process.env.NODE_ENV != "production";
 
 //  49152 to 65535 (inclusive)
 const genRandPort = (min, max) =>

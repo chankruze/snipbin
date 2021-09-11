@@ -6,7 +6,7 @@
   "author": "chankruze <chankruze@gmail.com>",
   "license": "GPL-3.0",
   "scripts": {
-    "start": "yarn && node index.js",
+    "start": "node index.js",
     "dev": "nodemon index.js"
   },
   "dependencies": {

@@ -1,5 +1,9 @@
 const utils = require("./utils");
-if (utils.isDevEnv) require("dotenv").config();
+
+if (utils.isDevEnv()) {
+  require("dotenv").config();
+}
+
 const PORT = process.env.PORT || utils.genRandPort(49152, 65535);
 
 const express = require("express"),
