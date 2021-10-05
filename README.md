@@ -1,16 +1,28 @@
-#snipbin
+## How to Use ?
 
-##Installation:
----
+### `yarn install` or `npm install`
+Install the required dependencies.
 
-- ##Install the dependencies.
+### `yarn start` or `npm start`
 
-> npm install or _yarn_
+Runs the app in the production mode.
+Open http://localhost:8080 to view it in the browser.
 
-> start dev server
+### `yarn lint`
 
-> npm run dev
+Apply es-lint check to configured files
 
-> start server
+### `yarn dev` or `npm run dev`
 
-> npm start  or yarn start
+First lints the project file then runs the app in the development mode.
+Open http://localhost:8080 to view it in the browser.
+
+### `yarn build` or `npm run build`
+
+Builds the app for production to the `dist` folder.
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.
+Your app is ready to be deployed!
+
+Well, if you're here, you definitely know what you're going to do!
