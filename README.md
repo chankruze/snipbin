@@ -3,7 +3,7 @@
 ##Installation:
 ---
 
-- Install the dependencies.
+- ##Install the dependencies.
 
 > npm install or _yarn_
 
